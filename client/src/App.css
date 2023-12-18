@@ -1,0 +1,115 @@
+.Match, .Advanced {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header, .App-footer {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 5px;
+}
+
+.App-header {
+  margin-bottom:10px;
+}
+
+.App-footer {
+  margin-top:100px;
+  font-size: 12px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body p, 
+form div {
+  padding: 0 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 98%;
+}
+
+.form-control, .form-select {
+  width: fit-content;
+  margin: auto;
+}
+
+.Match .container {
+  min-height: 420px;
+  padding-bottom: 20px;
+}
+
+#root:has(.Advanced) {
+  min-width: 600px;
+}
+
+.Advanced p {
+  padding: 0 30px;
+}
+
+.Advanced button {
+  margin: 15px;
+}
+
+.Advanced form div {
+  padding-bottom: 5px;
+}
+
+.Advanced form span {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.Advanced .container-true {
+  margin: 15px;
+}
+
+.Advanced .container-true .row .col {
+  border:1px solid;
+  padding: 0;
+}
+
+.Advanced .container-true .row:first-of-type,
+.Advanced .container-true:first-of-type .row:last-of-type {
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.03);
+}
+
+.Advanced .container-true .row.average {
+  font-weight: bold;
+}
+
+.Advanced .pair {
+  display: flex;
+  flex-direction: row;
+}
